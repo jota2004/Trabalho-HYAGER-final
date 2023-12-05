@@ -1,0 +1,1383 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&display=swap');
+
+/*============================CONFIGURAÇÕES PADRÕES DO SITE========================================*/
+
+
+/*Resetando o site*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Ajustando tudo dentro do site*/
+body {
+  height: 100%;
+  background-color: #ffffff;
+  transition: 0.3s;
+}
+
+/*Deixando o menu lateral oculto transparente*/
+.cabecalho {
+  background-color:#ffffff88;
+}
+
+/*Estilizando o nomes das paginas do site no menu oculto na parte lateral*/
+.titulo-cabecalho-lateral {
+  font-family: 'Asap Condensed', sans-serif;
+  text-align: center;
+}
+
+/*Estilizando os links para outras paginas do site no cabrçalho*/
+.titulo-cabecalho {
+  color: #000;
+}
+
+/*Mudando a cor dos links no cabeçalho quando o mouse passar por cima*/
+.titulo-cabecalho:hover {
+  color: #007f8d;
+}
+
+/*Estilizando os outros links para outras paginas do site no cabrçalho*/
+.titulo-cabecalho-2 {
+  color: #000;
+}
+
+/*Mudando a cor dos links no menu lateral quando o mouse passar por cima*/
+.titulo-cabecalho-2:hover {
+  color: #007f8d;
+}
+
+/*Estilizando os links do cabeçalho (Registro e Login) */
+.menu_link_dentro {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  margin-top: 10%;
+}
+
+/*Dando um espaçamento nos elementos do cabeçalho*/
+.menu-2 {
+  gap: 80px;
+}
+
+/*Estilizando os links do menu na parte de fora do menu suspenso (Login e Resgistro)*/
+.menu_link_fora {
+  margin-left: 100px;
+  text-decoration: none;
+  color: black;
+}
+
+/*Ajustando a posição dos link de fora do menu suspenso (Login e Resgistro)*/
+.menu-fora {
+  margin-top: 1%;
+  display: flex;
+  gap: 80px;
+  text-align: center;
+}
+
+/*Ajustando o topo do menu suspenso*/
+.Menu {
+  display: flex;
+  gap: 100px;
+  text-align: center;
+}
+
+/*Colocando sombras no menu*/
+.menu-site {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Estilizando o link para o login no menu*/
+.menu-lateral {
+  margin-left: 5%;
+  font-size: 25px;
+}
+
+/*Tirando a borda do botão do menu oculto*/
+.menu-hamburger {
+  border: transparent;
+}
+
+/*Estilizando os links do cabeçalho*/
+.link_link {
+  font-family: 'Asap Condensed', sans-serif;
+}
+
+/*Ajustando a posição da caixinha de pesquisa no site*/
+.busca {
+  margin-top: 1%;
+  font-size: 30px;
+  margin-left: 5%;
+  border: #000000;
+}
+
+/*Aumentando o tamanho do icone no menu oculto*/
+.icone-pessoa {
+  height: 50px;
+  width: 50px;
+}
+
+/*Subindo o icone de fechar o menu oculto*/
+.icone-X {
+  margin-bottom: 25%;
+}
+
+/*Estilizando o icone de fechar*/
+.icone-fechar {
+  border: none;
+  color: #000000;
+  background-color: transparent;
+}
+
+/*Trocando a cor do icone "X" quando o mouser passar em cima*/
+.icone-fechar:hover {
+  color: #6e0000;
+}
+
+/*Aumentando o tamanho do icone do menu hamburguer*/
+.icone-menu {
+  border: none;
+  background-color: transparent;
+  height: 31px;
+  width: 32px;
+}
+
+/*Aumentando o tamanho dos icone dos termos de segunça e politicas de privacidade*/
+.icone-seguranca {
+  height: 30px;
+  width: 30px;
+}
+
+/*Dando estilo aos links no menu suspenso*/
+.link_pagina {
+  font-weight: 100;
+  font-family: 'Asap Condensed', sans-serif;
+  margin: 0 0 65px 0;
+  color: black;
+  text-decoration: none;
+  border: #000000;
+}
+
+/*Colocando uma cor de fundo nos links do menu quando o mouse passar por cima*/
+a.link_pagina:hover{
+  background-color: #929292;
+}
+
+/*Estilizando os os termos no menu oculto*/
+.termos {
+  padding: 14px 16px;
+  margin: 0 0 50px 0;
+  font-size: 30px;
+}
+
+/*Estilizando o link que leva para a pagina de politicas de segurança*/
+.link_termos {
+  color: black;
+  text-decoration: none;
+}
+
+/*Quando for ativado pelo usuario muda a cor do site para a selecionada (Dark-Mode)*/
+input[type="checkbox"] {
+  display: none;
+}
+
+/*Mudando o cursor do mouse quando passar em cima do dark-mode*/
+.bi {
+  cursor: pointer;
+}
+
+/*Retira a lua quando o Dark-Mode esta desativado*/
+.lua {
+  display: none;
+}
+
+/*Retira a logo com o fundo preto quando o Dark-Mode esta desativado*/
+.logo2 {
+  display: none;
+}
+
+/*Definindo a cor de fundo do botão*/
+.btn {
+  background-color: rgba(255, 255, 255, 0.336);
+  width: 5rem;
+  height: 2.3rem;
+  border: 3px transparent;
+  border-radius: 10%;
+  color: #0e6d40;
+  cursor: pointer;
+}
+
+/*Moldando a barra de pesquina do menu*/
+.pesquisar {
+  background-color: rgba(255, 255, 255, 0.336);
+  border: 3px transparent;
+  font-family: 'Asap Condensed', sans-serif;
+  font-size: 20px;
+  height: 2.3rem;
+  width: 17rem;
+}
+
+/*Definindo a cor da palavra"Pesquisa"*/
+.pesquisar::placeholder{
+  color: #000000;
+}
+
+/*Estilizando o botão de Dark-Mode*/
+.botao-dark-mode{
+  text-align: center;
+  background: linear-gradient(rgb(253, 251, 117), rgb(255, 193, 100)) padding-box, linear-gradient(#001f44, #00D7DF) border-box;
+  border: 3px solid transparent;
+  border-radius: 15px;
+  padding: 2px;
+}
+
+/*usado para dar estilo ao rodapé*/
+.rodape {
+  text-align: center;
+  top: 50px;
+  bottom: 300px;
+  background: #000000;
+  padding: 20px 0;
+  color: #FFFFFF;
+  font-size: 13px;
+  margin: 20px 0 0;
+}
+
+
+
+/*=================================================HOME PAGE===========================================*/
+
+
+
+/*Dando estilo para os titulo no inicio da pagina inicial*/
+.titulo-inicio-home {
+  font-size: 50px;
+  font-family: 'Asap Condensed', sans-serif;
+  text-align: center;
+}
+
+/*Mudando a cor do fundo da pagina*/
+.card-home {
+  background-color: #ffffff;
+}
+
+/*Mudando a cor da data das publicações*/
+.data-publicacao {
+  color: #000;
+}
+
+/*Estilizando o link que leva ate a pagina de Moda*/
+.acesso-moda-home {
+  font-family: 'Asap Condensed', sans-serif;
+  text-align: center;
+}
+
+/*Estilizando as imagens do Home*/
+.card-image-home {
+  position: relative;
+  background-color: #eff7fc;
+  overflow: visible;
+}
+
+/*Estilizando o icone do menu hamburguer*/
+.card-menu {
+  position: relative;
+  background-color: transparent;
+  overflow: visible;
+}
+
+/*Estilizando a imagem do Home*/
+.card-image-home span {
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+/*Estilizando os links no nome das publicações*/
+.link_publicacao-home {
+  text-decoration: none;
+  color: black;
+}
+
+/*Estilizando os links no nome das publicações*/
+a.link_publicacao-home:hover {
+  color: #170250;
+}
+
+/*Estilizando as publicações*/
+.publicacao-home {
+  display: inline-block;
+  text-align: center;
+  margin: 1%;
+  padding: 40px 40px 3% 3%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  box-shadow: 3px 5px 8px rgb(92, 92, 92);
+}
+
+/*Link para ir ate a pagina com todas as noticias sobre moda*/
+.link-moda-home {
+  text-decoration: none;
+  color: #000;
+}
+
+/*Quando o mouser passar por cima a cor do link muda*/
+a.link-moda-home:hover {
+  color: #007f8d;
+}
+
+
+
+/*=================================================FAMOSOS======================================*/
+
+
+
+/*Estilizando o titulo da pagina Famosos*/
+.titulo-pagina-Famosos {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Asap Condensed', sans-serif;
+  background-size: linear-gradient(to bottom, rgb(0, 0, 0), rgb(127, 127, 127), rgb(0, 0, 0));
+  background-clip: text;
+}
+
+/*Estilizando as noticias*/
+.noticia-Famosos {
+  height: 90%;
+  width: 90%;
+  margin: 0% 8.3% 6%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  box-shadow: 3px 5px 8px rgb(92, 92, 92);
+}
+
+/*Padroniza a estilização das publicações do site*/
+.publicacao-Famosos {
+  text-align: center;
+  width: 27%;
+  margin-left: 5%;
+  text-decoration: none;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  font-family: 'Asap Condensed', sans-serif;
+  font-size: 20px;
+  box-shadow: 3px 5px 8px rgb(92, 92, 92);
+}
+
+/*Ajustando as imagens do site*/
+.Imagem-publi-Famosos {
+  width: 310px;
+  height: 320px;
+}
+
+/*Ajusta o titulo da publicações*/
+.descricao_publi-Famosos {
+  font-size: 30px;
+  margin-bottom: 3%;
+}
+
+/*Estiliza os links que levam ate as publicações*/
+.link_publicacao-Famosos {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*Muda a cor das letras que levam ate as noticias */
+a.link_publicacao-Famosos:hover {
+  color: #170250;
+}
+
+
+
+/*=================================================LOGIN======================================*/
+
+
+
+/*Mudando a cor do fundo da página de Login*/
+.plano-de-fundo-login {
+  height: auto;
+  background: linear-gradient(45deg, #0c73cc, #29fff1, #CC150C, #0c73cc, #29fff1);
+}
+
+/*Movendo a logo do site para a direita*/
+.logo-login {
+  margin: 0.2% 25% 0.1%;
+}
+
+/*estiliza o quadro do login*/
+.login {
+  background-color: rgba(255, 255, 255, 0.336);
+  border: 3px transparent;
+  font-size: 20px;
+  margin: 50px 30%;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+/*Estilizando o titulo do quadro de login*/
+.titulo-login {
+  text-align: center;
+  font-size: 70px;
+  background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+  margin-bottom: 5%;
+  /*      PALETA 11
+    #FFCBF2, #F3C4FB, #ECBCFD, #E5B3FE, #E2AFFF, #DEAAFF, #FFCBF2, #F3C4FB, #ECBCFD, #E5B3FE, #E2AFFF, #DEAAFF
+  */
+}
+
+/*Dar espaço entre os botões "esqueceu a senha" e "criar conta"*/
+.espacamento-login {
+  margin: 0 40px 0 0;
+}
+
+/*Usado para centralizar tudo abaixo do titulo*/
+.centro-login {
+  margin: 0% 10% 0%;
+}
+
+/*Estilizando os botões da caixa de login*/
+.botao-login {
+  border-radius: 5px;
+}
+
+/*Estilizando o botão para acessar o perfil*/
+.link-profile {
+  margin-left: 43%;
+  border-radius: 5px;
+}
+
+
+
+/*=================================================REGISTRO======================================*/
+
+
+
+/*Mudando a cor de fundo da pagina de Registro*/
+.plano-de-fundo-registro {
+  background: linear-gradient(54deg, #0c73cc, #29fff1, #CC150C, #0c73cc, #29fff1);
+}
+
+/*Movendo a logo do site para a direita*/
+.logo-registro {
+  margin: 0.2% 25% 0.1%;
+}
+
+/*Ajustando o quadro de cadastro*/
+.registro {
+  background-color: rgba(255, 255, 255, 0.336);
+  border: 3px solid transparent;
+  font-size: 20px;
+  margin: 50px 30.0%;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+/*Estilizando o titulo do quadro de login*/
+.titulo-registro {
+  text-align: center;
+  font-size: 70px;
+  background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+  margin-bottom: 5%;
+}
+
+/*Movendo o botão de enviar para o centro*/
+.botao-registro {
+  margin: 0 40px 0 50px;
+}
+
+/*Movendo o botão*/
+.botao-enviar {
+  margin: 0 0 0 130px;
+} 
+
+/*Centralizando o botão para validar a senha*/
+.resposta-senha {
+  margin: 10px 0 0 20px;
+}
+
+/*Dar espaçamento em algumas partes do quadro de resgistro*/
+.espacamento-registro {
+  margin: 0 40px 0 0;
+}
+
+/*Estilizando o "Confirmar senha"*/
+.Senha-registro {
+  margin-left: 55px;
+}
+
+
+
+/*==================================================MODA==============================================*/
+
+
+
+/*Estilizando o titulo da pagina*/
+.titulo-pagina-moda {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Asap Condensed', sans-serif;
+  background-size: linear-gradient(to bottom, rgb(0, 0, 0), rgb(127, 127, 127), rgb(0, 0, 0));
+  background-clip: text;
+}
+
+/*Ajusta o subtitulo da pagina*/
+.sub_titulo-moda {
+  font-family: 'Asap Condensed', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+/*Padroniza a estilização das publicações do site*/
+.publicacao-moda {
+  text-align: center;
+  float: left;
+  width: 27%;
+  margin: 1%;
+  margin-left: 4%;
+  margin-bottom: 5%;
+  text-decoration: none;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  font-family: 'Asap Condensed', sans-serif;
+  font-size: 20px;
+  box-shadow: 3px 5px 8px rgb(92, 92, 92);
+}
+
+/*Ajustando as imagens do site*/
+.Imagem-publi-moda {
+  width: 300px;
+  height: 300px;
+}
+
+/*Ajusta o titulo da publicações*/
+.titulo_publi-moda {
+  font-size: 30px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+/*Estiliza os links que levam ate as publicações*/
+.link_publicacao-moda {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*Muda a cor das letras que levam ate as noticias */
+a.link_publicacao-moda:hover {
+  color: #170250;
+}
+
+/*Ajusta as datas de publicação*/
+.data-moda {
+  margin-top: 6%;
+  padding: 5%;
+  margin-bottom: 3%;
+}
+
+/*Classe para organizar a paginação do site */
+.paginas-moda {
+  margin-top: 3.5%;
+  margin-left: 35%;
+  display: inline-block;
+}
+
+/*Estilizando a paginação*/
+.paginas-moda a {
+  color: rgb(0, 0, 0);
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/*Cria uma marcação no numero da paginação a qual o usuario esta*/
+.paginas-moda a.active {
+  background-color: #075ac0;
+  color: white;
+}
+
+/*Muda a cor de fundo na paginação quando o mouse passa por cima*/
+.paginas-moda a:hover:not(.active) {
+  background-color: #075ac0;
+}
+
+
+
+/*==============================================PAGINA SOBRE NÓS================================================================*/
+
+
+
+/*Estilizando o titulo da pagina*/
+.titulo-pagina-criador {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Asap Condensed', sans-serif;
+  background-size: linear-gradient(to bottom, rgb(0, 0, 0), rgb(127, 127, 127), rgb(0, 0, 0));
+  background-clip: text;
+
+}
+
+/*Estilizando a linha que separa a apresentação dos criadores do final da pagina*/
+.linha-criador {
+  background-color: #000000;
+  color:#000000 ;
+}
+
+/*Moldando o quadro com as informações dos criadores*/
+.apresentacao-criador {
+  width: 28%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 3%;
+  margin-right: 1%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  border: 3px solid #000000;
+  border-radius: 10px;
+}
+
+/*Centralizando o nome dos criadores na parte de apresentação*/
+.titulo-criador {
+  text-align: center;
+}
+
+/*Dando um espaçamento nos subtitulos da pagina*/
+.sub-titulo-criador {
+  margin: 0% 0% 0% 2%;
+}
+
+/*Dando um espaçamento nos textos da pagina*/
+.texto-criador {
+  margin: 0% 0% 0% 2%;
+}
+
+/*Ajustando as imagens dos criadores*/
+.imagem-criador {
+  margin: 0% 7% 0%;
+  margin-bottom: 2%;
+}
+
+
+/*---------------CLASSES DO EFEITO PARALLAX------------------------------*/
+
+
+/*Definindo o tamanho do parallax*/
+.efeito-parallax-criador {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*Estilizando o parallax*/
+.criador {
+  display: block;
+}
+
+/*Ajustando os paragrafos da pagina*/
+section.module p {
+  margin-bottom: 40px;
+}
+
+/*Utilizado para que o ultimo paragrafo não fique com a mesma margem dos outros*/
+section.module:last-child {
+  margin-bottom: 0;
+}
+
+/*Alterando os titulos*/
+section.module h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+/*Movendo os conteudos dentro do parallax*/
+section.module.content {
+ padding: 40px 0;
+}
+
+/**/
+section.module.parallax {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh !important;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+/**/
+section.module.parallax:after {
+  content: "";
+  height: 100%;
+  width: 80%;
+  position: absolute;
+  z-index: 8;
+  background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+  background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+}
+
+/*Colocando a imagem fixa no fundo*/
+section.module.parallax-1 {
+  background-image: url("file:///home/usuario/Documentos/H%20Y%20A%20G%20E%20R%20-%20Principal/Assets/H%20Y%20A%20G%20E%20R%20(1).png");
+}
+
+/*Colocando a imagem fixa no fundo*/
+section.module.parallax-2 {
+  background-image:url("https://scontent-gig4-1.xx.fbcdn.net/v/t1.6435-9/46262846_2172268506130130_8880669818848542720_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=300f58&_nc_ohc=9D71fct4OrsAX_OuFtg&_nc_ht=scontent-gig4-1.xx&oh=00_AfCpKJD-krN4ThKoiCe9g0Vea9WALbeQqTd3rXvz9ZFWRA&oe=656F7125");
+}
+
+/**/
+section.module.parallax h1 {
+  color: #FFF;
+  text-align: center;
+  font-size: 78px;
+  z-index: 50;
+  text-transform: uppercase;
+}
+
+/**/
+@media all and (max-width: 820px) {
+  
+  /**/
+  section.module h2 {
+    font-size: 32px;
+  }
+
+  /**/
+  .module h2, p{
+    padding: 0 8px;
+  }
+
+  /**/
+  .container-criador{
+    margin:0;
+    padding:0;
+  }
+
+  /**/
+  section.module.parallax h1 {
+    font-size: 36px;
+  }
+}
+
+
+
+/*=================================================Política de Privacidade e Termos de uso======================================*/
+
+
+
+/*Estilizando o titulo da pagina*/
+.titulo-termos {
+  font-size: 50px;
+  font-family: 'Asap Condensed', sans-serif;
+  text-align: center;
+}
+
+/*Estilizando os sub-titulos da pagina*/
+.Sub-titulo-termos {
+  margin: 0% 2% 0%;
+}
+
+/*Estilizando o texto da pagina*/
+.texto-termos {
+  margin: 0% 2% 0%;
+}
+
+
+
+/*=================================================PROFILE===================================================================*/
+
+
+
+/*Centralizando o titulo da pagina*/
+.titulo-perfil {
+  text-align: center;
+}
+
+/*Criando a area do perfil com as informações do usuario*/
+.perfil {
+  margin-left: 35%;
+  margin-bottom: 5%;
+  text-align: center;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+  background: linear-gradient(rgb(255, 192, 236), rgb(255, 133, 133)) padding-box, linear-gradient(#001f44, #00D7DF) border-box;
+  border-radius: 10px;
+  width: 35%;
+}
+
+/*Movendo a logo do site para a direita*/
+.logo-perfil {
+  margin: 0% 19% 0%;
+}
+
+
+
+
+/*=================================================DARK MODE===================================================================*/
+
+
+
+/*-------------------------------------------------PADRÃO DO SITE--------------------------------------*/
+
+
+/*Alterando a cor de fundo do cabeçalho do site*/
+.dark, .dark header {
+  width: auto;
+  background-color: #000000;
+  color: #fff;
+}
+
+/*Alterando a cor de fundo do menu lateral oculto*/
+.dark .cabecalho {
+  background-color: #000000;
+}
+
+/*Retirando o sol quando o dark-mode estiver ativo*/
+.dark .sol {
+  display: none;
+} 
+
+/*Deixando a lua fixa no dark-mode*/
+.dark .lua {
+  display: block;
+}
+
+/*Retirando a logo com o fundo branco quando o dark-mode estiver ativo*/
+.dark .logo1 {
+  display: none;
+} 
+
+/*Deixando logo do dark mode fixa*/
+.dark .logo2 {
+  display: block;
+}
+
+/*Alterando a cor de fundo do  icone de menu hamburguer*/
+.dark .card-menu {
+  background-color: #000000;;
+}
+
+/*Altera a cor dos links para outras paginas no cabeçalho*/
+.dark .titulo-cabecalho {
+  color: #ffffff;
+}
+
+/*Estilizando alguns dos links no cabeçao*/
+.dark .titulo-cabecalho-2 {
+  color: #ffffff;
+}
+
+/*Alterando as cores da barra de pesquisa*/
+.dark .pesquisar {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #007f8d;
+  font-weight: bold;
+}
+
+/*Altera a cor de fundo do botão*/
+.dark .btn {
+  background-color: #000000;
+  color: #007f8d;
+  border-color: #007f8d;
+}
+
+/*Estilizando o botão de buscar quando o mouser passar por cima*/
+.dark .btn:hover {
+  color: #FFFFFF;
+  background-color: #007f8d;
+}
+
+/*Muda a cor da palavra "Pesquisar" dentro da caixa de pesquisa*/
+.dark .pesquisar::placeholder{
+  color: #007f8d;
+}
+
+/*Estilizando o icone X*/
+.dark .icone-fechar {
+  background-color: #000000;
+  border: none;
+  color: #ff0000;
+}
+
+/*Mudando a cor do icone menu hamburger*/
+.dark .menu-hamburger {
+  color: #ffffff;
+}
+
+/*Mudando a cor do icone X quando o mouse passa em cima*/
+.dark .icone-fechar:hover {
+  color: #007f8d;
+}
+
+/*Colocando sombras no cabeçalho*/
+.dark .menu-site {
+  box-shadow: 0px 15px 10px rgb(163, 160, 160);
+}
+
+/*Estilizando o botão de Dark-Mode quando esta ativo*/
+.dark .botao-dark-mode{
+  text-align: center;
+  background: linear-gradient(rgb(104, 104, 104), rgb(45, 74, 129)) padding-box, linear-gradient(#001f44, #00D7DF) border-box;
+  border: 3px solid transparent;
+  border-radius: 15px;
+  padding: 4px 13px 10px 0px;
+  margin: 21px 50px 20px 5px;
+}
+
+
+/*-------------------------------------------------HOME PAGE-------------------------------------------*/
+
+
+/*Alterando a cor do ínicio da pagina HOME*/
+.dark .titulo-inicio-home {
+  color: #ffffff;
+}
+
+/*Altera o fundo de um parte do site*/
+.dark .card-home {
+  background-color: #131313;
+}
+
+/*Alterando a cor de fundo das imagens*/ 
+.dark .card-image-home {
+  background-color: #37474f;;
+}
+
+/*Altera a cor de fundo das publicações no HOME*/
+.dark .publicacao-home {
+  background-color: #263238;
+}
+
+/*Muda a cor do titulo das publicações*/
+.dark .titulo-publicacao-home{
+  color: #ffffff;
+}
+
+/*Muda a cor da data das publicações*/
+.dark .data-publicacao {
+  color: #ffffff;
+}
+
+/*Mudando a cor do links no menu quando o mouse passar*/
+.dark .titulo-cabecalho:hover {
+  color: #007f8d;
+}
+
+/*Mudando a cor dos links na parte do menu lateral oculto quando o mouse passar*/
+.dark .titulo-cabecalho-2:hover {
+  color: #007f8d;
+}
+
+/*Alterando a cor do link que leva ate a parte sobre moda no final da home*/
+.dark .link-moda-home {
+  text-decoration: none;
+  color: #007f8d;
+}
+
+/*Alterando a cor do link quando o mouse passar por cima*/
+.dark a.link-moda-home:hover {
+  color: #c8e5e9;
+}
+
+/*Deixando o titulo da pagina no modo neon*/
+.dark .neon-home {
+  font-family: 'Asap Condensed', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  font: normal 48px/normal "Warnes", sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/*Deixando o titulo neon*/
+.dark .neon-home:hover {
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+}
+
+
+/*-------------------------------------------------MODA------------------------------------------------*/
+
+
+/*Mudando a cor do fundo da pagina*/
+.dark .card-moda {
+  background-color: #131414;
+}
+
+/*Mudando a cor dos titulos das publicações*/
+.dark .titulo_publi-moda {
+  color: #FFFFFF;
+}
+
+/*Mudando a cor do fundo de dentro das publicações*/
+.dark .publicacao-moda {
+  background-color: #263238;
+}
+
+/*Estilizando a guia de paginação*/
+.dark .paginas-moda {
+  background-color: #007f8d;
+  border: #007f8d;
+  border: 5px;
+}
+
+/*Deixando o titulo da pagina no modo neon*/
+.dark .neon-moda {
+  font-family: 'Asap Condensed', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  font: normal 60px/normal "Warnes", sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/*Deixando o titulo neon*/
+.dark .neon-moda:hover {
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+}
+
+
+/*-------------------------------------------------FAMOSOS---------------------------------------------*/
+
+
+/*Mudando a cor do fundo da pagina*/
+.dark .card-famoso {
+  background-color: #131414;
+}
+
+/*Mudando a cor de fundo de dentro das publicações*/
+.dark .publicacao-Famosos {
+  background-color: #263238;
+}
+
+.dark .publicacao-Famosos2 {
+  background-color: #263238;
+  color: white;
+}
+
+/*Mudando a cor dos titulos das publicações*/
+.dark .descricao_publi-Famosos {
+  color: #FFFFFF;
+}
+
+/*Deixando o titulo da pagina no modo neon*/
+.dark .neon-famosos {
+  font-family: 'Asap Condensed', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  font: normal 48px/normal "Warnes", sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/*Deixando o titulo  neon*/
+.dark .neon-famosos:hover {
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+}
+
+
+/*-------------------------------------------------LOGIN-----------------------------------------------*/
+
+
+/*Muda a cor do fundo da pagina*/
+.dark .card-login {
+  background-color: #131414;
+}
+
+/*Muda as palavras "email" e "senha" dentro da caixa de digitação*/
+.dark .centro-login::placeholder{
+  color: #007f8d;
+}
+
+/*Muda a cor das palavras dentro da caixa de digitação"*/
+.dark .sub_titulo-login {
+  color: #000000;
+}
+
+/*Mudando a cor de fundo do quadro de login*/
+.dark .login {
+  background: linear-gradient(rgb(65, 65, 65), rgb(65, 65, 65)) padding-box, linear-gradient(#001f44, #00D7DF) border-box;
+}
+
+/*Muda a cor da caixa de digitação*/
+.dark .caixa-login {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+/*Estilizando os botões de "Criar uma conta" e "Esqueceu a senha?"*/
+.dark .botao-login {
+  background-color: #000000;
+  color: #007f8d;
+  border-color: #007f8d;
+}
+
+/*Estilizando o botão pra acessar o perfil*/
+.dark .link-profile {
+  background-color: #000000;
+  color: #007f8d;
+  border-color: #007f8d;
+}
+
+
+/*-------------------------------------------------REGISTRO--------------------------------------------*/
+
+
+/*Muda a cor de fundo da pagina*/
+.dark .card-registro {
+  background-color: #131414;
+}
+
+/*Mudando a cor de fundo da caixa de registro*/
+.dark .registro {
+  background: linear-gradient(rgb(65, 65, 65), rgb(65, 65, 65)) padding-box, linear-gradient(#001f44c2, #00d8dfc2) border-box;
+}
+
+/*Estilizando a caixa de digitação do nome*/
+.dark .nome {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #007f8d;
+}
+
+/*Estilizando a caixa de digitação do email*/
+.dark .email {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #007f8d;
+}
+
+/*Mudando a cor da pergunta "Telefone"*/
+.dark .telefone-registro {
+  color: #000000;
+}
+
+/*Mudando a cor das perguntas*/
+.dark .pergunta-registro {
+  color: #000000;
+ 
+}
+
+/*Estilizando a caixa de digitação do Telefone*/
+.dark .numero {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #007f8d;
+}
+
+/*Mudando a cor da pergunta "Data de Nascimento"*/
+.dark .DataNasc-registro {
+  color: #000000;
+}
+
+/*Mudando a cor da pergunta "Confirma senha"*/
+.dark .senha-registro {
+  color: #000000;
+}
+
+/*Estilizando as caixas de digitação da data de aniversario*/
+.dark .data-registro {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #007f8d;
+}
+
+/*Estilizando a caixa de digitação da senha*/
+.dark .Senha {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #007f8d;
+}
+
+/*Mudando a cor d pergunta "Email" da caixa de digitação*/
+.dark .email-registro {
+  color: #000000;
+}
+
+/*Mudando a cor das respostas para a pergunta "Sexo" na caixa de digitação*/
+.dark .sexo {
+  color: #000000;
+}
+
+/*Estilizando o botão de enviar na caixa de digitação*/
+.dark .botao-registro {
+  background-color: #000000;
+  color: #007f8d;
+  border-color: #007f8d;
+}
+
+/*Mudando a cor das palavras "Nome" e "Sobrenome" na caixa de digitação*/
+.dark .nome::placeholder{
+  color: #007f8d;
+}
+
+/**Mudando a cor da palavra "email" na caixa de digitação*/
+.dark .email::placeholder{
+  color: #007f8d;
+}
+
+/**Mudando a cor da palavra "Telefone" na caixa de digitação*/
+.dark .numero::placeholder{
+  color: #007f8d;
+}
+
+/**Mudando a cor das palavras "Dia", "Mes" e "Ano" na caixa de digitação*/
+.dark .data-registro::placeholder {
+  color: #007f8d;
+}
+
+/**Mudando a cor da palavra "Senha" na caixa de digitação*/
+.dark .Senha::placeholder{
+  color: #007f8d;
+}
+
+
+/*-------------------------------------------------POLITICA DE PRIVACIDADE-----------------------------*/
+
+
+/*Mudando a cor do fundo da pagina*/
+.dark .card-termos {
+  background-color: #131414;
+}
+
+/*Deixando o titulo da pagina no modo neon*/
+.dark .neon-termos {
+  font-family: 'Asap Condensed', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  font: normal 48px/normal "Warnes", sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/*Deixndo o titulo da pagina neon*/
+.dark .neon-termos:hover {
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+}
+
+
+/*-------------------------------------------------SOBRE NOS-------------------------------------------*/
+
+
+/*Mudando a cor de fundo da pagina*/
+.dark .card-criadores {
+  background-color: #131414;
+}
+
+/*Trocando a imagem de fundo do parallax para o modo Dark*/
+.dark section.module.parallax-1 {
+  background-image: url("file:///home/usuario/Documentos/H%20Y%20A%20G%20E%20R%20-%20Principal/Assets/H%20Y%20A%20G%20E%20R%20logo.png");
+}
+
+/*Mudando a cor de fundo do quadro sobre os criadores*/
+.dark .apresentacao-criador {
+  background-color: rgb(65, 65, 65);
+}
+
+
+/*-------------------------------------------------PERFIL-------------------------------------------*/
+
+/*Altera o fundo de um parte do site*/
+.dark .card-perfil {
+  background-color: #131313;
+}
+
+/*Deixando o titulo da pagina no modo neon*/
+.dark .titulo-perfil {
+  font-family: 'Asap Condensed', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  font: normal 48px/normal "Warnes", sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/*Deixndo o titulo da pagina neon*/
+.dark .titulo-perfil:hover {
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+}
+
+/*Mudando a cor do fundo da area do perfil*/
+.dark .perfil {
+  background: linear-gradient(rgb(65, 65, 65), rgb(65, 65, 65)) padding-box, linear-gradient(#001f44, #00D7DF) border-box;
+}
