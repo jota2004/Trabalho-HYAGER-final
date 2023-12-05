@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="Assets/logo.png">
+
+  <!----------Links para utilizar o Bootdtrap------------------------------->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+
+  <title> H Y A G E R - Login</title> <!--Colocando o título na aba do site------->
+
+  <!----------Links para conectar documento de JavaScript e CSS------------->
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/scripts.js" defer></script>
+
+</head>
+
+<!----------------------INICÍO DO SITE------------------------------------>
+
+<body class="plano-de-fundo-login">
+
+  <header>
+<!----------Criando um cabeçalho para a pagina---------------------------->
+    <div>
+      <nav class="navbar navbar-expand-md menu-site">
+        <div class="Menu"> <!--Moldando a parte do menu lateral-->
+          <button class="menu-hamburger card-menu" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+            <h2 class="link_link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-list icone-menu" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 
+                      0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 
+                      1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 
+                      1 0 1H3a.5.5 0 0 1-.5-.5z" />
+              </svg>
+
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">
+                  Menu
+                </font>
+              </font>
+            </h2>
+          </button>
+
+<!----------Parte visivel do menu----------------------------------------->
+          <a class="navbar-brand" href="index.html">
+            <label" for="change-theme">
+              <i class="logo1"> <img src="Assets/logo.svg" width="70" height="72"></i>
+              <i class="logo2"> <img src="Assets/logonova.png" width="70" height="72"> </i>
+            </label>
+          </a>
+
+          <div class="collapse navbar-collapse menu-2" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-2">
+              <li class="nav-item">
+                <a class="nav-link" href="registro.html">
+                  <h2 class="link_link titulo-cabecalho">
+                    Registrar-se
+                  </h2>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">
+                  <h2 class="link_link titulo-cabecalho">
+                    Login
+                  </h2>
+                </a>
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 pesquisar" type="search" placeholder="Pesquisar" aria-label="Search">
+
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+
+            <div class="botao-dark-mode">
+              <input type="checkbox" name="change-theme" id="change-theme" />
+
+              <label class="icone-dark-mode" for="change-theme">
+                <i class="bi sol"> <img src="Assets/sol.png" width="30" height="30"></i>
+                <i class="bi lua"> <img src="Assets/lua.png" width="25" height="25"> </i>
+              </label>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+<!----------Moldando o menu lateral oculto--------------------------------->
+      <div class="offcanvas offcanvas-start cabecalho" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header ">
+          <div class="titulo-cabecalho">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-person-circle icone-pessoa" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+            </svg>
+          </div>
+
+<!----------Colocando o link de acesso a area de Login e Registro--------->
+          <h2 id="staticBackdropLabel"> <!--Dentro do menu lateral oculto-->
+            <font style="vertical-align: inherit;">
+              <font class="ab" style="vertical-align: inherit;">
+
+                <a class="menu_link_dentro" href="login.html">
+                  <h6 class="menu-lateral titulo-cabecalho">
+                    Acesse sua conta
+                  </h6>
+                </a>
+
+                <a class="menu_link_dentro" href="registro.html">
+                  <h6 class="titulo-cabecalho">
+                    ou cadastre-se gratuitamente
+                  </h6>
+                </a>
+              </font>
+            </font>
+
+          </h2>
+
+<!----------Colocando o icone de fechar----------------------------------->
+          <p class="icone-X">
+            <button type="button" class="close icone-fechar" data-bs-dismiss="offcanvas" aria-label="Fechar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+              </svg>
+            </button>
+          </p>
+        </div>
+
+        <hr>
+
+<!----------Links para acessar as outras paginas do site------------------>
+        <a class="link_pagina" href="index.html">
+          <h1 class="titulo-cabecalho-lateral titulo-cabecalho-2">
+            home
+          </h1>
+        </a>
+
+        <a class="link_pagina" href="moda.html">
+          <h1 class="titulo-cabecalho-lateral titulo-cabecalho-2">
+            Moda
+          </h1>
+        </a>
+
+        <a class="link_pagina" href="famosos.html">
+          <h1 class="titulo-cabecalho-lateral titulo-cabecalho-2">
+            Famosos
+          </h1>
+        </a>
+
+        <a class="link_pagina" href="sobre-nos.html">
+          <h1 class="titulo-cabecalho-lateral titulo-cabecalho-2">
+            Sobre Nós
+          </h1>
+        </a>
+
+        <hr>
+
+<!----------Colocando as.... do site-------------------------------------->
+        <div class="termos">
+          <a class="link_termos titulo-cabecalho-2" href="termos.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-file-lock2-fill icone-seguranca" viewBox="0 0 16 16">
+              <path d="M7 6a1 1 0 0 1 2 0v1H7V6z" />
+              <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 
+                  2 0 0 0-2-2zm-2 6v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 
+                  1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 
+                  1-1.224V6a2 2 0 1 1 4 0z" />
+            </svg>
+            Política de privacidade
+          </a>
+
+          <br>
+          <br>
+
+          <a class="link_termos titulo-cabecalho-2" href="termos.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-file-earmark-text-fill icone-seguranca" viewBox="0 0 16 16">
+              <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 
+                  2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 
+                  3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 
+                  1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 
+                  0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z" />
+            </svg>
+            Termos de uso
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+<!-------------------------FIM DO MENU------------------------------------>
+
+  <main>
+    <div class="card-login">
+
+      <br>
+      <br>
+
+      <section>
+<!----------Criando o quadro de login do site----------------------------->
+        <form class="login">
+          <img class="logo-login" src="Assets/logo3.svg" width="250" height="200">
+
+          <h1 class="titulo-login">Login</h1>
+
+          <label class="centro-login sub_titulo-login" for="Email">E-mail:</label>
+          <br>
+          <input class="centro-login caixa-login" type="text" id="Email" size="25" placeholder="email" />
+
+          <br>
+          <br>
+
+          <label class="centro-login sub_titulo-login" for="Senha">Senha:</label>
+          <br>
+          <input class="centro-login caixa-login" type="password" id="senha" size="25" placeholder="senha">
+
+          <br>
+          <br>
+
+          <input class="botao-login espacamento-login centro-login" type="button"
+            onclick="alert('Se você não lembra imagina eu')" value="Esqueceu a senha?">
+
+          <a href="registro.html">
+            <input class="botao-login" type="button" value="Criar uma conta">
+          </a>
+
+          <br>
+          <br>
+
+          <a href="profile.html">
+            <input class="link-profile" type="button" value="Entrar">
+          </a>
+
+        </form>
+
+<!----------Fim do quadro de login---------------------------------------->
+      </section>
+
+<!----------Criando o rodapé do site-------------------------------------->
+      <footer class="rodape">
+        <p> <strong> &copy; Copyright Blog Moda H Y A G E R - 2023 </strong> </p>
+
+        <br>
+
+        <strong> <small> Criadores: Lívia Xavier, Karolina Souza e João Vitor </small> </strong>
+     
+      </footer>
+
+    </div>
+  </main>
+
+</body>
+
+<!-------------------------FIM DO SITE------------------------------------>
+
+</html>

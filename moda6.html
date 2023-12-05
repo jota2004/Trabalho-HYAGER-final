@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="Assets/logo.png">
+
+  <!----------Links para utilizar o Bootdtrap------------------------------->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+
+  <title> H Y A G E R - Moda</title> <!--Colocando o título na aba do site------->
+
+  <!----------Links para conectar documento de JavaScript e CSS------------->
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/scripts.js" defer></script>
+
+</head>
+
+<!----------------------INICÍO DO SITE------------------------------------>
+
+<body>
+
+  <header>
+
+<!----------Criando um cabeçalho para a pagina---------------------------->
+    <div>
+      <nav class="navbar navbar-expand-md menu-site">
+        <div class="Menu"> <!--Moldando a parte do menu lateral-->
+          <button class="menu-hamburger card-menu" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+            <h2 class="link_link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-list icone-menu" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 
+                        0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 
+                        1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 
+                        1 0 1H3a.5.5 0 0 1-.5-.5z" />
+              </svg>
+
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">
+                  Menu
+                </font>
+              </font>
+            </h2>
+          </button>
+
+<!----------Parte visivel do menu----------------------------------------->
+
+          <a class="navbar-brand" href="index.html">
+            <label" for="change-theme">
+              <i class="logo1"> <img src="Assets/logo.svg" width="70" height="72"></i>
+              <i class="logo2"> <img src="Assets/logonova.png" width="70" height="72"> </i>
+            </label>
+          </a>
+
+          <div class="collapse navbar-collapse menu-2" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-2">
+              <li class="nav-item">
+                <a class="nav-link" href="registro.html">
+                  <h2 class="link_link titulo-cabecalho">
+                    Registrar-se
+                  </h2>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">
+                  <h2 class="link_link titulo-cabecalho">
+                    Login
+                  </h2>
+                </a>
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 pesquisar" type="search" placeholder="Pesquisar" aria-label="Search">
+
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+
+            <div class="botao-dark-mode">
+              <input type="checkbox" name="change-theme" id="change-theme"/>
+              
+              <label class="icone-dark-mode" for="change-theme">
+                <i class="bi sol"> <img src="Assets/sol.png" width="30" height="30"></i>
+                <i class="bi lua"> <img src="Assets/lua.png" width="25" height="25"> </i>
+              </label>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+<!----------Moldando o menu lateral oculto--------------------------------->
+      <div class="offcanvas offcanvas-start cabecalho" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel">
+
+        <div class="offcanvas-header ">
+
+          <div class="titulo-cabecalho">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-person-circle icone-pessoa" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+            </svg>
+
+          </div>
+
+<!----------Colocando o link de acesso a area de Login e Registro--------->
+
+          <h2 id="staticBackdropLabel"> <!--Dentro do menu lateral oculto-->
+
+            <font style="vertical-align: inherit;">
+              <font class="ab" style="vertical-align: inherit;">
+
+                <a class="menu_link_dentro" href="login.html">
+                  <h6 class="menu-lateral titulo-cabecalho"> Acesse sua conta </h6>
+                </a>
+
+                <a class="menu_link_dentro" href="registro.html">
+                  <h6 class="titulo-cabecalho"> ou cadastre-se gratuitamente </h6>
+                </a>
+
+              </font>
+            </font>
+
+          </h2>
+
+<!----------Colocando o icone de fechar----------------------------------->
+
+          <p class="icone-X">
+
+            <button type="button" class="close icone-fechar" data-bs-dismiss="offcanvas" aria-label="Fechar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+              </svg>
+            </button>
+
+          </p>
+
+        </div>
+
+        <hr>
+
+<!----------Links para acessar as outras paginas do site------------------>
+        <a class="link_pagina" href="index.html">
+          <h1 class="titulo-cabecalho-lateral titulo-cabecalho-2"> home </h1>
+        </a>
+        <a class="link_pagina" href="moda.html">
+          <h1 class="titulo-cabecalho-lateral titulo-cabecalho-2"> Moda </h1>
+        </a>
+        <a class="link_pagina" href="famosos.html">
+          <h1 class="titulo-cabecalho-lateral titulo-cabecalho-2"> Famosos </h1>
+        </a>
+        <a class="link_pagina" href="sobre-nos.html">
+          <h1 class="titulo-cabecalho-lateral titulo-cabecalho-2"> Sobre Nós </h1>
+        </a>
+
+        <hr>
+
+<!----------Colocando as.... do site-------------------------------------->
+        <div class="termos">
+
+          <a class="link_termos titulo-cabecalho-2" href="termos.html">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-file-lock2-fill icone-seguranca" viewBox="0 0 16 16">
+              <path d="M7 6a1 1 0 0 1 2 0v1H7V6z" />
+              <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 
+                      2 0 0 0-2-2zm-2 6v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 
+                      1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 
+                      1-1.224V6a2 2 0 1 1 4 0z" />
+            </svg>
+
+            Política de privacidade
+
+          </a>
+
+          <br>
+          <br>
+
+          <a class="link_termos titulo-cabecalho-2" href="termos.html">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-file-earmark-text-fill icone-seguranca" viewBox="0 0 16 16">
+              <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 
+                      2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 
+                      3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 
+                      1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 
+                      0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z" />
+            </svg>
+
+            Termos de uso
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+<!-------------------------FIM DO MENU------------------------------------>
+  
+  <main>
+
+    <div class="card-moda">
+
+      <br>
+      <br>
+
+<!----------Início dos posts sobre moda----------------------------------->
+      <h1 class="titulo-pagina-moda neon-moda"> <strong> Moda </strong> </h1>
+
+
+      <section class="row mx-auto g-4">
+
+        <h2 class="sub_titulo-moda"> Todas as publicações</h2>
+
+<!----------Moda 61------------------------------------------------------------------------>
+
+        <div class="publicacao-moda col-md-3 col-xxl-2">
+
+          <a class="link_publicacao-moda"
+            href="https://gauchazh.clicrbs.com.br/donna/moda/noticia/2023/05/gisele-bundchen-anitta-dua-lipa-e-outras-celebridades-se-destacam-no-met-gala-2023-clh5fzc8o003a016x6xp57hz2.html">
+            <h4 class="titulo_publi-moda">
+              Principais looks do Met Gala
+            </h4>
+          </a>
+
+          <small class="data-moda-moda"> <strong> Publicado 04 de maio de 2023 </strong> </small>
+
+          <br>
+
+          <a
+            href="https://gauchazh.clicrbs.com.br/donna/moda/noticia/2023/05/gisele-bundchen-anitta-dua-lipa-e-outras-celebridades-se-destacam-no-met-gala-2023-clh5fzc8o003a016x6xp57hz2.html">
+            <img class="Imagem-publi-moda bd-placeholder-img card-img-top" src="Assets/metgala.webp"> </a>
+
+        </div>
+
+<!----------Moda 62------------------------------------------------------------------------>
+
+        <div class="publicacao-moda col-md-3 col-xxl-2">
+
+          <a class="link_publicacao-moda" href="https://www.marinaegabriella.com.br/blog/brasil-core">
+            <h4 class="titulo_publi-moda"> Tendência Brazilcore: trend do momento</h4>
+          </a>
+
+          <small class="data-moda-moda"> <strong> Publicado 30 de abril de 2023 </strong> </small>
+
+          <br>
+
+          <a href="https://www.marinaegabriella.com.br/blog/brasil-core">
+            <img class="Imagem-publi-moda bd-placeholder-img card-img-top" src="Assets/Brazilcore2.JPG"> </a>
+
+        </div>
+
+<!----------Moda 63------------------------------------------------------------------------>
+
+        <div class="publicacao-moda col-md-3 col-xxl-2">
+
+          <a class="link_publicacao-moda" href="https://sacadaonline.com.br/qual-o-significado-das-cores-das-roupas/">
+            <h4 class="titulo_publi-moda">Significado das Cores e Oque elas Representam</h4>
+          </a>
+
+          <small class="data-moda-moda"> <strong> Publicado 26 de abril de 2023 </strong> </small>
+
+          <br>
+
+          <a href="https://sacadaonline.com.br/qual-o-significado-das-cores-das-roupas/">
+            <img class="Imagem-publi-moda bd-placeholder-img card-img-top" src="Assets/cores.jpg"></a>
+
+        </div>
+
+<!----------Moda 64------------------------------------------------------------------------>
+
+        <div class="publicacao-moda col-md-3 col-xxl-2">
+
+          <a class="link_publicacao-moda" href="https://sacadaonline.com.br/cores-que-combinam-com-laranja/">
+            <h4 class="titulo_publi-moda">O que combina com laranja?</h4>
+          </a>
+
+          <small class="data-moda"> <strong> Publicado 22 de abril de 2023 </strong> </small>
+
+          <br>
+
+          <a href="https://sacadaonline.com.br/cores-que-combinam-com-laranja/">
+            <img class="Imagem-publi-moda bd-placeholder-img card-img-top" src="Assets/laranja.jpg"> </a>
+
+        </div>
+
+<!----------Moda 65------------------------------------------------------------------------>
+
+        <div class="publicacao-moda col-md-3 col-xxl-2">
+
+          <a class="link_publicacao-moda" href="https://uigafas.com.br/blog/oculos-para-rosto-oval">
+            <h4 class="titulo_publi-moda">Óculos para cada tipo de rosto</h4>
+          </a>
+
+          <small class="data-moda"> <strong> Publicado 18 de abril de 2023 </strong> </small>
+
+          <br>
+
+          <a href="https://uigafas.com.br/blog/oculos-para-rosto-oval">
+            <img class="Imagem-publi-moda bd-placeholder-img card-img-top" src="Assets/oculos.jpg"> </a>
+
+        </div>
+
+<!----------Moda 66------------------------------------------------------------------------>
+
+        <div class="publicacao-moda col-md-3 col-xxl-2">
+
+          <a class="link_publicacao-moda"
+            href="https://stealthelook.com.br/argola-com-texturizacao-e-o-acessorio-tem-que-ter-da-vez/">
+            <h4 class="titulo_publi-moda">Argolas: Acessório Essencial "Tem que Ter"</h4>
+          </a>
+
+          <small class="data-moda"> <strong> Publicado 14 de abril de 2023 </strong> </small>
+
+          <br>
+
+          <a href="https://stealthelook.com.br/argola-com-texturizacao-e-o-acessorio-tem-que-ter-da-vez/">
+            <img class="Imagem-publi-moda bd-placeholder-img card-img-top" src="Assets/argolas.webp"> </a>
+
+        </div>
+
+<!----------Moda 67------------------------------------------------------------------------>
+
+        <div class="publicacao-moda col-md-3 col-xxl-2">
+
+          <a class="link_publicacao-moda"
+            href="https://revistamarieclaire.globo.com/moda/noticia/2023/03/gwyneth-paltrow-transforma-tribunal-em-passarela-com-direito-a-grifes-e-agua-de-luxo.ghtml">
+            <h4 class="titulo_publi-moda">Presa sim, fora de moda nunca</h4>
+          </a>
+
+          <small class="data-moda"> <strong> Publicado 10 de abril de 2023 </strong> </small>
+
+          <br>
+
+          <a
+            href="https://revistamarieclaire.globo.com/moda/noticia/2023/03/gwyneth-paltrow-transforma-tribunal-em-passarela-com-direito-a-grifes-e-agua-de-luxo.ghtml">
+            <img class="Imagem-publi-moda bd-placeholder-img card-img-top" src="Assets/audiencia.webp"></a>
+
+        </div>
+
+<!----------Moda 68------------------------------------------------------------------------>
+
+        <div class="publicacao-moda col-md-3 col-xxl-2">
+
+          <a class="link_publicacao-moda"
+            href="https://revistamarieclaire.globo.com/moda/noticia/2023/04/dono-da-louis-vuitton-e-a-pessoa-mais-rica-do-mundo-em-2023.ghtml">
+            <h4 class="titulo_publi-moda">A pessoa mais rica do mundo</h4>
+          </a>
+
+          <small class="data-moda"> <strong> Publicado 06 de abril de 2023 </strong> </small>
+
+          <br>
+
+          <a
+            href="https://revistamarieclaire.globo.com/moda/noticia/2023/04/dono-da-louis-vuitton-e-a-pessoa-mais-rica-do-mundo-em-2023.ghtml">
+            <img class="Imagem-publi-moda bd-placeholder-img card-img-top" src="Assets/rico.webp"> </a>
+
+        </div>
+
+<!----------Moda 69------------------------------------------------------------------------>
+
+        <div class="publicacao-moda col-md-3 col-xxl-2">
+
+          <a class="link_publicacao-moda"
+            href="https://www.jorgebischoff.com.br/bota-western-couro-preto-off-white-peb-i23">
+            <h4 class="titulo_publi-moda">Volta da moda Country: Bota Western P&B</h4>
+          </a>
+
+          <small class="data-moda"> <strong> Publicado 02 de abril de 2023 </strong> </small>
+
+          <br>
+
+          <a href="https://www.jorgebischoff.com.br/bota-western-couro-preto-off-white-peb-i23">
+            <img class="Imagem-publi-moda bd-placeholder-img card-img-top" src="Assets/bota.jpg"> </a>
+
+        </div>
+
+<!----------Moda 70------------------------------------------------------------------------>
+
+        <div class="publicacao-moda col-md-3 col-xxl-2">
+
+          <a class="link_publicacao-moda"
+            href="https://stealthelook.com.br/esse-e-o-tenis-esportivo-que-estamos-amando/">
+            <h4 class="titulo_publi-moda">O melhor e mais estiloso tenis esportivo</h4>
+          </a>
+
+          <small class="data-moda"> <strong> Publicado 30 de março de 2023 </strong> </small>
+
+          <br>
+
+          <a href="https://stealthelook.com.br/esse-e-o-tenis-esportivo-que-estamos-amando/">
+            <img class="Imagem-publi-moda bd-placeholder-img card-img-top" src="Assets/tenis.webp"> </a>
+
+        </div>
+
+<!----------Moda 71------------------------------------------------------------------------>
+
+        <div class="publicacao-moda col-md-3 col-xxl-2">
+
+          <a class="link_publicacao-moda" href="https://alineraquel.com.br/21-ideias-de-tatuagens-de-praia/">
+            <h4 class="titulo_publi-moda">Tatuagens perfeitas com o tema praiano</h4>
+          </a>
+
+          <small class="data-moda"> <strong> Publicado 26 de março de 2023 </strong> </small>
+
+          <br>
+
+          <a href="https://alineraquel.com.br/21-ideias-de-tatuagens-de-praia/">
+            <img class="Imagem-publi-moda bd-placeholder-img card-img-top" src="Assets/tatuagem.png"></a>
+
+        </div>
+
+<!----------Moda 72------------------------------------------------------------------------>
+
+        <div class="publicacao-moda col-md-3 col-xxl-2">
+
+          <a class="link_publicacao-moda"
+            href="https://harpersbazaar.uol.com.br/moda/8-vezes-em-que-rihanna-redefiniu-os-looks-de-gravidez/#gallery=1&slide=5">
+            <h4 class="titulo_publi-moda">Rihanna redefiniu a moda com sua gravidez</h4>
+          </a>
+
+          <small class="data-moda"> <strong> Publicado 18 de março de 2023 </strong> </small>
+
+          <br>
+
+          <a
+            href="https://harpersbazaar.uol.com.br/moda/8-vezes-em-que-rihanna-redefiniu-os-looks-de-gravidez/#gallery=1&slide=5">
+            <img class="Imagem-publi-moda bd-placeholder-img card-img-top" src="Assets/rihanna.jpg"> </a>
+
+        </div>
+
+      </section>
+
+      <section>
+        <br>
+        <br>
+
+<!-- está div foi usada  para que futuramente possamos adicionar mais conteudos em 
+  outras paginas assim deixando osite será mais organizado-->
+
+        <div class="paginas-moda">
+          <a href="moda5.html">&laquo;</a>
+          <a href="moda.html">1</a>
+          <a href="moda2.html">2</a>
+          <a href="moda3.html">3</a>
+          <a href="moda4.html">4</a>
+          <a href="moda5.html">5</a>
+          <a class="active" href="moda6.html">6</a>
+          <a href="#">&raquo;</a>
+        </div>
+
+      </section>
+      
+<!-------------------------Criando o rodapé do site----------------------->
+
+      <footer class="rodape">
+
+        <p> <strong> &copy; Copyright Blog Moda H Y A G E R - 2023 </strong> </p>
+
+        <br>
+
+        <strong> <small> Criadores: Lívia Xavier, Karolina Souza e João Vitor </small> </strong>
+
+      </footer>
+
+
+    </div>
+
+  </main>
+
+</body>
+
+<!-------------------------FIM DO SITE------------------------------------>
+
+</html>
